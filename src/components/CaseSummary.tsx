@@ -11,7 +11,6 @@ const C = {
 }
 
 const serif = "'Playfair Display', Georgia, serif"
-const editorial = "'Cormorant Garamond', Georgia, serif"
 const sans = 'Inter, sans-serif'
 
 const timelineItems = [

@@ -86,7 +86,7 @@ export default function ExpertiseMap() {
             {allNodes.map((node, i) => {
               const { x, y } = pos(node.x, node.y)
               const active = activeNode === node.id
-              const isC = 'isCenter' in node && node.isCenter
+              const isC = (node as any).isCenter === true
               return (
                 <motion.g
                   key={node.id}
@@ -106,14 +106,14 @@ export default function ExpertiseMap() {
                     animate={{ scale: active && !isC ? 1.08 : 1 }}
                     transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                   />
-                  {isC && (
+                  {isC ? (
                     <motion.circle
                       cx={x} cy={y} r={node.r}
                       fill="none" stroke={C.gold} strokeWidth={0.5}
                       animate={{ r: [node.r, node.r + 9], opacity: [0.4, 0] }}
                       transition={{ duration: 2.5, repeat: Infinity, ease: 'easeOut' }}
                     />
-                  )}
+                  ) : null}
                   <text
                     x={x} y={y}
                     textAnchor="middle" dominantBaseline="central"
