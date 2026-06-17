@@ -83,7 +83,7 @@ export default function Hero() {
             </div>
 
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.05rem', fontStyle: 'italic', color: '#2A4F7A', marginBottom: '1.25rem' }}>
-              Aspiring Litigation &amp; Arbitration Lawyer
+              Aspiring Lawyer
             </p>
 
             <p style={{ fontSize: '0.875rem', color: '#6B7280', lineHeight: 1.75, maxWidth: '28rem', marginBottom: '2rem' }}>
@@ -167,9 +167,6 @@ export default function Hero() {
                   </div>
 
                   <div style={{ marginTop: '0.625rem', textAlign: 'right' }}>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.58rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#6B7280' }}>
-                      IV Year · VIII Semester
-                    </p>
                   </div>
                 </motion.div>
               </motion.div>
